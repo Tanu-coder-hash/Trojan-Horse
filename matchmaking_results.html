@@ -1,0 +1,25 @@
+{% load static %}  <!-- Load the static template tag -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matchmaking Results</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <!-- Link to JS -->
+    <script src="{% static 'js/script.js' %}"></script>
+</head>
+<body>
+    <h1>Matchmaking Results</h1>
+    <!-- Link to an image -->
+    <img src="{% static 'images/logo.jpg' %}" alt="Logo">
+
+    <ul>
+        {% for match in matches %}
+            <li>{{ match.name }} - {{ match.location }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

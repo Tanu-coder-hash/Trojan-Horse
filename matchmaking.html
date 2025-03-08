@@ -1,0 +1,26 @@
+{% load static %}  <!-- Load the static template tag -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matchmaking</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <!-- Link to JS -->
+    <script src="{% static 'js/script.js' %}"></script>
+</head>
+<body>
+    <h1>Find a Surrogate Mother</h1>
+    <!-- Link to an image -->
+    <img src="{% static 'images/logo.jpg' %}" alt="Logo">
+
+    <form method="post">
+        {% csrf_token %}
+        <label for="intended_parent_id">Intended Parent ID:</label>
+        <input type="text" id="intended_parent_id" name="intended_parent_id" required>
+        <button type="submit">Find Matches</button>
+    </form>
+</body>
+</html>

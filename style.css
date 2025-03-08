@@ -1,0 +1,331 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #FFFFFF 0%, #F3E9DC 100%);
+    margin: 0;
+    padding: 0;
+    color: #333333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    position: relative;
+  }
+  
+  .logo-container {
+    flex-shrink: 0;
+  }
+  
+  header img {
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .header-text {
+    text-align: center;
+    flex-grow: 1;
+  }
+  
+  header h1 {
+    font-size: 48px;
+    color: #5E548E;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  header p {
+    font-size: 18px;
+    color: #2c3e50;
+    font-style: italic;
+  }
+  
+  .login-button {
+    background-color: #5E548E;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #333333;
+  }
+  
+  .search-bar {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .search-bar input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+  }
+  
+  .search-bar button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #5E548E;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-bar button:hover {
+    background-color: #333333;
+  }
+  
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #5E548E;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: #333333;
+  }
+  
+  .about {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 50px 20px;
+    color: #2c3e50;
+  }
+  
+  .hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .hero .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .hero .cta-buttons a {
+    background-color: #FB6F92;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero .cta-buttons a:hover {
+    background-color: #FF1493;
+  }
+  
+  .core-features {
+    text-align: left;
+    padding: 50px 20px;
+  }
+  
+  .core-features .feature {
+    margin-bottom: 30px;
+  }
+  
+  .core-features .feature p {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .testimonials {
+    background: #FFF;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+  }
+  
+  .testimonials .testimonial {
+    margin-bottom: 30px;
+  }
+  
+  .testimonials .testimonial p {
+    font-size: 18px;
+    color: #555;
+    font-style: italic;
+  }
+  
+  .testimonials .testimonial h4 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .cta-section {
+    background: #FFB997;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 50px;
+  }
+  
+  .cta-section a {
+    background-color: #5E548E;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-section a:hover {
+    background-color: #333333;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  footer .quick-links,
+  footer .social-media,
+  footer .contact-info {
+    margin: 20px 0;
+  }
+  
+  footer .quick-links a,
+  footer .social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #5E548E;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  footer .quick-links a:hover,
+  footer .social-media a:hover {
+    color: #333333;
+  }
+  
+  .legal-support,
+  .surrogacy,
+  .pregnancy {
+    text-align: left;
+    margin: 50px 0;
+  }
+  
+  .legal-support .grid,
+  .surrogacy .grid,
+  .pregnancy .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .legal-support .sub-tab,
+  .surrogacy .sub-tab,
+  .pregnancy .sub-tab {
+    background: #F3E9DC;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .legal-support .sub-tab h3,
+  .surrogacy .sub-tab h3,
+  .pregnancy .sub-tab h3 {
+    font-size: 20px;
+    color: #5E548E;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .legal-support .sub-tab p,
+  .surrogacy .sub-tab p,
+  .pregnancy .sub-tab p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .surrogacy-journey {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .surrogacy-journey h2 {
+    font-size: 36px;
+    color: #5E548E;
+    margin-bottom: 20px;
+  }
+  
+  .surrogacy-journey p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .surrogacy-journey .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .surrogacy-journey .cta-button {
+    background-color: #CBAACB;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .surrogacy-journey .cta-button:hover {
+    background-color: #5E548E;
+  }
