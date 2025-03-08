@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SurroCare: Your Surrogacy Journey Starts Here</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img src="{% static 'images/logo.jpg' %}" alt="SurroCare Logo">
+      <div class="header-text">
+        <h1>SurroCare</h1>
+        <p>"Empowering Women, One Connection at a Time."</p>
+        <div class="search-bar">
+          <input type="text" placeholder="Search for services, doctors, or resources...">
+        </div>
+      </div>
+      <a href="#" class="login-button" id="login-button">Log In</a>
+    </header>
+
+    <nav>
+      <a href="#" onclick="loadPage('home')">Home</a>
+      <a href="#" onclick="loadPage('surrogacy')">Surrogacy</a>
+      <a href="#" onclick="loadPage('pregnancy')">Pregnancy</a>
+      <a href="#" onclick="loadPage('new-mothers')">New Mothers & Domestic Help</a>
+      <a href="#" onclick="loadPage('menopause')">Menopause</a>
+      <a href="#" onclick="loadPage('legal-support')">Legal Support</a>
+      <a href="#" onclick="loadPage('adoption')">Adoption</a>
+      <a href="#" onclick="loadPage('beyond-surrogacy')">Beyond Surrogacy</a>
+      <a href="#" onclick="loadPage('emotional-support')">Emotional & Community Support</a>
+    </nav>
+
+    <div id="content">
+      <!-- Default home page content -->
+      <section class="about">
+        <p>SurroCare is dedicated to supporting women through their surrogacy and fertility journeys. We provide personalized guidance, health tracking, and emotional support to ensure a safe and fulfilling experience for all parties involved.</p>
+        <p>85% of intended parents struggle to find a trusted surrogate. We’re changing that.</p>
+      </section>
+
+      <section class="hero">
+        <h2>Empowering Women, One Connection at a Time.</h2>
+        <p>A trusted platform for surrogacy, fertility support, and women’s health.</p>
+        <div class="cta-buttons">
+          <a href="#" class="cta-button">Find a Surrogate</a>
+          <a href="#" class="cta-button">Become a Surrogate</a>
+          <a href="#" class="cta-button">Learn More</a>
+        </div>
+      </section>
+
+      <section class="core-features">
+        <h2>Why Choose Us?</h2>
+        <div class="feature">
+          <p>Safe & Verified Matchmaking</p>
+        </div>
+        <div class="feature">
+          <p>Legal & Financial Guidance</p>
+        </div>
+        <div class="feature">
+          <p>Health & Wellness Tracking</p>
+        </div>
+        <div class="feature">
+          <p>Emotional Support & Counseling</p>
+        </div>
+        <div class="feature">
+          <p>Fertility Resources & Postpartum Care</p>
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial">
+          <p>"SurroCare made my surrogacy journey so much easier. The support and guidance I received were invaluable."</p>
+          <h4>- Priya Sharma, Surrogate Mother</h4>
+        </div>
+        <div class="testimonial">
+          <p>"Finding a surrogate felt overwhelming until we discovered SurroCare. They connected us with a wonderful surrogate and provided all the support we needed."</p>
+          <h4>- Ankur and Neha Mehta, Intended Parents</h4>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <h2>Ready to Start Your Journey?</h2>
+        <a href="#" class="cta-button">Sign Up Now</a>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="quick-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="social-media">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+      </div>
+      <div class="contact-info">
+        <p>Email: support@surrocare.com</p>
+        <p>Phone: +1 234 567 890</p>
+      </div>
+      <p>Made with ❤️ by <strong>SurroCare</strong> in partnership with <strong>BloomLife</strong></p>
+    </footer>
+  </div>
+
+  <script src="{% static 'js/script.js' %}"></script>
+</body>
+
+</html>
